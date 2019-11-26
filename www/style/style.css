@@ -1,0 +1,155 @@
+/* Pagina de Inicio */
+
+.inicio{
+    background: rgb(44, 133, 235);
+}
+
+html,body {
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+  }
+#encabezado {
+    text-align: center;  
+}
+
+/*Galeria de imagenes*/
+
+.galeria{
+
+    background: white;
+    text-align: center;
+    margin: auto;
+    padding: 20%;
+    border-radius: 10%;
+}
+ 
+ .slider {
+    width: 95%;
+    margin: 5%;
+    height: 40%;
+    overflow: hidden;
+    background-color: transparent;
+    color:white;
+    border-radius: 20%;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+   
+.botonesIngreso button{
+    background-color: white; 
+    color: black; 
+    margin: 2%;
+    border: 2px solid #008CBA;
+    vertical-align:10%;
+    border-radius: 7%;
+    
+    
+}
+
+/* Al poner el curso encima (hover) */
+.botonesIngreso button:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Inicio pagina Main */
+
+#encabezado1{
+
+    grid-area: header;
+}
+
+#menu {
+
+    grid-area: main;
+}
+
+#seleccionViajes {
+
+grid-area: footer;
+}
+
+
+.contenedor1 {
+
+height:100%;
+margin:0;
+display: flex;
+flex-direction: column;
+
+display: grid;
+grid-template-columns: 100%;
+grid-auto-rows: 15% 75% 10%;
+border: 2px solid red;
+grid-template-areas: 
+"header header "
+"main main"
+"footer footer";             
+}
+
+#seleccionViajes {
+   
+ display: grid;
+grid-template-columns: auto 15% auto;
+}
+
+#seleccionViajes button{
+width: 100%;
+}
+
+#btnConductor {
+    border: none;
+    background: rgb(54, 175, 139);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#btnPasajeros {
+    border:none;
+    background: rgb(97, 125, 202);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#btnmas{
+
+    background: rgb(212, 173, 82);
+    border: solid rgb(212, 123, 82);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta http-equiv="Content-Security-Policy" self= "https://apis.google.com">
+
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Montserrat|Source+Code+Pro&display=swap" rel="stylesheet">
+    
     <title>AventApp</title>
 
+    
     
 </head>
 <body class="inicio">
     <div class="contenedor">
         
         <header id="encabezado">
-          
+            
             <h1 id="titulo">AventApp</h1>
         
         </header>    
@@ -22,10 +27,10 @@
         <div class="slider">
 			<ul>
 				<li>
-                    <h1>¡BIENVENIDOS A AVENTAPP</h1>
+                    <h1>¡BIENVENIDOS A AVENTAPP!</h1>
                 </li>
 				<li>
-                    <h1>UN SITIO PARA CORDINAR TUS VIAJES</h1>
+                    <h1>UN SITIO PARA COORDINAR TUS VIAJES</h1>
                 </li>
 				<li>
                     <h1>FACIL Y SENCILLO</h1>
@@ -36,13 +41,41 @@
 	        </ul>
 		</div>
 
-        <div class="botonesIngreso">
-           <a href="public/main.html"> <button id="BtnGoogle">Ingrese   con Google  <img src="imagenes/google.png" width="12%" srcset="">    </button></a>
-            <button id="BtnFacebook">Ingreso con Facebook <img src="imagenes/facebook.png" width="12%" srcset=""> </button>
-        </div>
+        <fieldset class="login">
+            <legend>Iniciar Sesion</legend>
+            <p>Usuario: <input id="usuario" type="text" placeholder= "Introduzca el usuario"></p>
+            <p>Constraseña: <input id= "contra" type="password" placeholder="Introduzca la contraseña"></p>
+            <button id="ingreso" onclick="ingresar()">Ingresar</button>
+        </fieldset>
+        
+        
+        <fieldset class="login">
+            <legend>Registrarse</legend>
+            <p>Usuario: <input id="usuario2" type="text" placeholder= "Introduzca el usuario"></p>
+            <p>Constraseña: <input id= "contra2" type="password" placeholder="Introduzca la contraseña"></p>
+            <button id="Crear" onclick="crearUsuario()">Crear</button>
+        </fieldset>
+        
 
+
+        <!--<div class="botonesIngreso">
+            <button id="BtnGoogle" onclick="ingresoGoogle()">Ingrese   con Google  <img src="imagenes/google.png" width="12%" srcset="">    </button>
+            <button id="BtnFacebook">Ingreso con Facebook <img src="imagenes/facebook.png" width="12%" srcset=""> </button>
+        </div>-->
+
+    
     </div>
 
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+
+    <script src="js/firebase.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

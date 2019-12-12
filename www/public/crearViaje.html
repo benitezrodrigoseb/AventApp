@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Montserrat|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="contenedor1">
+
+            <header id="encabezado1">
+    
+                 <h1 id="titulo">AventApp</h1>
+            
+            </header> 
+                   
+          
+                 <a id="back" href="../public/main.html" ><img src="../imagenes/round-left-button.png" width="40%"></a>
+           
+          
+            
+
+            
+             <div id="menu">
+                <form action="" method="get">
+                 <input type="radio" name="boton" value="2" id="btnradioConductor" >Conductor <br></br>
+                 <input type="radio" name="boton" value="2" id="btnradioPasajero"  >Pasajero
+
+                <fieldset>
+                    <legend>Informacion del viaje</legend>
+                    <p>Origen: <input id="introduceOrigen" type="text" name="nombre" placeholder="Introduce origen"></p>
+                    <p>Destino: <input id="introduceDestino" type="text" name="Introduce destino" placeholder="Introduce destino"></p>
+                    Fecha: <input id="introduceFecha" type="date" name="fechaHora"><br></br>
+                    Hora: <input id="introduceHora" type="time" name="fechaHora"><br>
+                    <!-- <p>Lugares disponibles</p> -->
+                    <p>Cupos</p><select id="cupos">
+                        <option selected>...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option> 
+                        <option value="4">4</option> 
+                    </select>
+
+                </fieldset><br></br>
+    
+                <button id="btnCrearViaje" onclick="crearViaje()" type="button"> Crear viaje</button>
+
+            </form>
+                <div class="ViajeVuelta">
+                <input type="checkbox" name="casilla">Viaje de vuelta<br></br>
+                
+                <fieldset>
+                    <legend>Informacion del viaje</legend>
+                    <p>Origen: <input type="text" name="nombre" placeholder="Introduce origen"></p>
+                    <p>Destino: <input type="text" name="Introduce destino" placeholder="Introduce destino"></p>
+                    Fecha: <input type="date" name="fechaHora"><br></br>
+                    Hora: <input type="time" name="fechaHora">
+                    <p>Lugares disponibles</p>
+                    <input type="radio" name="pasajeros" value="1">1 
+                    <input type="radio" name="pasajeros" value="2">2
+                    <input type="radio" name="pasajeros" value="3">3 
+                    <input type="radio" name="pasajeros" value="4">4
+                </fieldset>
+            </div>
+                <!-- <button id="btnCrearViaje" type="button"> Crear viaje</button> -->
+            </div>
+
+        </div>
+   
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+
+
+    <script src="../js/firebase.js"></script>
+
+    <script src="../js/script.js"></script>  
+</body>
+</html>

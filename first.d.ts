@@ -1,2 +1,2 @@
-import { first } from "./index";
+import { first } from "../fp";
 export = first;

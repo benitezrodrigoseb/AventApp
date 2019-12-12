@@ -1,2 +1,2 @@
-import { isEmpty } from "./index";
+import { isEmpty } from "../fp";
 export = isEmpty;

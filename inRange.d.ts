@@ -1,2 +1,2 @@
-import { inRange } from "./index";
+import { inRange } from "../fp";
 export = inRange;

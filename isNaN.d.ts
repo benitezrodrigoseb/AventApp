@@ -1,2 +1,2 @@
-import { isNaN } from "./index";
+import { isNaN } from "../fp";
 export = isNaN;

@@ -1,2 +1,2 @@
-import { fromPairs } from "./index";
+import { fromPairs } from "../fp";
 export = fromPairs;

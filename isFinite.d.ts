@@ -1,2 +1,2 @@
-import { isFinite } from "./index";
+import { isFinite } from "../fp";
 export = isFinite;

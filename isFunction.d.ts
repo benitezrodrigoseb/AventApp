@@ -1,2 +1,2 @@
-import { isFunction } from "./index";
+import { isFunction } from "../fp";
 export = isFunction;

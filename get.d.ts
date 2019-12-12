@@ -1,2 +1,2 @@
-import { get } from "./index";
+import { get } from "../fp";
 export = get;

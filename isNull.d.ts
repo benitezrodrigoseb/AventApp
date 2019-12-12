@@ -1,2 +1,2 @@
-import { isNull } from "./index";
+import { isNull } from "../fp";
 export = isNull;

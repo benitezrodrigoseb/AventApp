@@ -1,2 +1,2 @@
-import { forOwnRight } from "./index";
+import { forOwnRight } from "../fp";
 export = forOwnRight;

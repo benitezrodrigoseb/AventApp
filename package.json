@@ -1,86 +1,94 @@
 {
-  "_from": "@firebase/database@^0.5.11",
-  "_id": "@firebase/database@0.5.15",
+  "_from": "@grpc/grpc-js@^0.6.12",
+  "_id": "@grpc/grpc-js@0.6.13",
   "_inBundle": false,
-  "_integrity": "sha512-6GsZGDOoRbAaeBQjjbcKTCscEMV+qDXS1UWPmRYI0UBdhgCY05S1z5aNkjF2B3pFgkr35zDbVAdsQC+JhRCzLQ==",
-  "_location": "/@firebase/database",
+  "_integrity": "sha512-fxkxS+sEtYdfR0ifqgCTqBe4jZ5PvlvgcaYpzwgMqz+b18uUdPmp5eRQN+qbbJg2ZMUcgItA8OWIvAobW3PDng==",
+  "_location": "/@grpc/grpc-js",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "@firebase/database@^0.5.11",
-    "name": "@firebase/database",
-    "escapedName": "@firebase%2fdatabase",
-    "scope": "@firebase",
-    "rawSpec": "^0.5.11",
+    "raw": "@grpc/grpc-js@^0.6.12",
+    "name": "@grpc/grpc-js",
+    "escapedName": "@grpc%2fgrpc-js",
+    "scope": "@grpc",
+    "rawSpec": "^0.6.12",
     "saveSpec": null,
-    "fetchSpec": "^0.5.11"
+    "fetchSpec": "^0.6.12"
   },
   "_requiredBy": [
-    "/firebase-admin"
+    "/google-gax"
   ],
-  "_resolved": "https://registry.npmjs.org/@firebase/database/-/database-0.5.15.tgz",
-  "_shasum": "1d88d169368b01d745956720776eb2312110d4e8",
-  "_spec": "@firebase/database@^0.5.11",
-  "_where": "C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\firebase-admin",
+  "_resolved": "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-0.6.13.tgz",
+  "_shasum": "960c37fffb006c683382de3fdf4d8ab837829afe",
+  "_spec": "@grpc/grpc-js@^0.6.12",
+  "_where": "C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\google-gax",
   "author": {
-    "name": "Firebase",
-    "email": "firebase-support@google.com",
-    "url": "https://firebase.google.com/"
-  },
-  "browser": "dist/index.cjs.js",
-  "bugs": {
-    "url": "https://github.com/firebase/firebase-js-sdk/issues"
+    "name": "Google Inc."
   },
   "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Google Inc."
+    }
+  ],
   "dependencies": {
-    "@firebase/component": "0.1.0",
-    "@firebase/database-types": "0.4.9",
-    "@firebase/logger": "0.1.32",
-    "@firebase/util": "0.2.35",
-    "faye-websocket": "0.11.3",
-    "tslib": "1.10.0"
+    "semver": "^6.2.0"
   },
   "deprecated": false,
-  "description": "This is the Firebase Realtime Database component of the Firebase JS SDK.",
+  "description": "gRPC Library for Node - pure JS implementation",
   "devDependencies": {
-    "@firebase/app": "0.4.26",
-    "@firebase/app-types": "0.4.9",
-    "rollup": "1.27.2",
-    "rollup-plugin-typescript2": "0.25.2",
-    "typescript": "3.7.2"
+    "@grpc/proto-loader": "^0.5.0",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-mocha": "0.0.32",
+    "@types/lodash": "^4.14.108",
+    "@types/mocha": "^5.2.6",
+    "@types/ncp": "^2.0.1",
+    "@types/node": "^12.7.5",
+    "@types/pify": "^3.0.2",
+    "@types/semver": "^6.0.1",
+    "clang-format": "^1.0.55",
+    "execa": "^2.0.3",
+    "gts": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-mocha": "^6.0.0",
+    "lodash": "^4.17.4",
+    "mocha-jenkins-reporter": "^0.4.1",
+    "ncp": "^2.0.0",
+    "pify": "^4.0.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   },
-  "esm2017": "dist/index.esm2017.js",
+  "engines": {
+    "node": "^8.13.0 || >=10.10.0"
+  },
   "files": [
-    "dist"
+    "src/*.ts",
+    "build/src/*.{js,d.ts,js.map}",
+    "LICENSE"
   ],
-  "homepage": "https://github.com/firebase/firebase-js-sdk#readme",
+  "homepage": "https://grpc.io/",
+  "keywords": [],
   "license": "Apache-2.0",
-  "main": "dist/index.node.cjs.js",
-  "module": "dist/index.esm.js",
-  "name": "@firebase/database",
-  "nyc": {
-    "extension": [
-      ".ts"
-    ],
-    "reportDir": "./coverage/node"
-  },
-  "peerDependencies": {},
+  "main": "build/src/index.js",
+  "name": "@grpc/grpc-js",
   "repository": {
-    "directory": "packages/database",
     "type": "git",
-    "url": "git+https://github.com/firebase/firebase-js-sdk.git"
+    "url": "https://github.com/grpc/grpc-node/tree/master/packages/grpc-js"
   },
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "prepare": "yarn build",
-    "test": "yarn test:emulator",
-    "test:all": "run-p test:browser test:node",
-    "test:browser": "karma start --single-run",
-    "test:emulator": "ts-node --compiler-options='{\"module\":\"commonjs\"}' ../../scripts/emulator-testing/database-test-runner.ts",
-    "test:node": "TS_NODE_FILES=true TS_NODE_CACHE=NO TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' nyc --reporter lcovonly -- mocha 'test/{,!(browser)/**/}*.test.ts' --file index.node.ts --opts ../../config/mocha.node.opts"
+    "build": "npm run compile",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "format": "clang-format -i -style=\"{Language: JavaScript, BasedOnStyle: Google, ColumnLimit: 80}\" src/*.ts test/*.ts",
+    "lint": "tslint -c node_modules/google-ts-style/tslint.json -p . -t codeFrame --type-check",
+    "posttest": "npm run check",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "gulp test"
   },
-  "typings": "dist/index.d.ts",
-  "version": "0.5.15"
+  "types": "build/src/index.d.ts",
+  "version": "0.6.13"
 }

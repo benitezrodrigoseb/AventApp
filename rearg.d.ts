@@ -1,2 +1,2 @@
-import { rearg } from "./index";
+import { rearg } from "../fp";
 export = rearg;

@@ -1,2 +1,2 @@
-import { sampleSize } from "./index";
+import { sampleSize } from "../fp";
 export = sampleSize;

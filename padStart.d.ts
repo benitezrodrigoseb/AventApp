@@ -1,2 +1,2 @@
-import { padStart } from "./index";
+import { padStart } from "../fp";
 export = padStart;

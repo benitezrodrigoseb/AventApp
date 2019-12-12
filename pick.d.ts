@@ -1,2 +1,2 @@
-import { pick } from "./index";
+import { pick } from "../fp";
 export = pick;

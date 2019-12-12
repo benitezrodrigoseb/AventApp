@@ -1,2 +1,2 @@
-import { omit } from "./index";
+import { omit } from "../fp";
 export = omit;

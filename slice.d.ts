@@ -1,2 +1,2 @@
-import { slice } from "./index";
+import { slice } from "../fp";
 export = slice;

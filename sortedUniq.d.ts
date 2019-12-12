@@ -1,2 +1,2 @@
-import { sortedUniq } from "./index";
+import { sortedUniq } from "../fp";
 export = sortedUniq;

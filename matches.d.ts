@@ -1,2 +1,2 @@
-import { matches } from "./index";
+import { matches } from "../fp";
 export = matches;

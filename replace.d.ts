@@ -1,2 +1,2 @@
-import { replace } from "./index";
+import { replace } from "../fp";
 export = replace;

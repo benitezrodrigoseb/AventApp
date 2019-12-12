@@ -1,2 +1,2 @@
-import { attempt } from "../fp";
+import { attempt } from "./index";
 export = attempt;

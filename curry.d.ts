@@ -1,2 +1,2 @@
-import { curry } from "../fp";
+import { curry } from "./index";
 export = curry;

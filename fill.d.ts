@@ -1,2 +1,2 @@
-import { fill } from "../fp";
+import { fill } from "./index";
 export = fill;

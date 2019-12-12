@@ -1,2 +1,2 @@
-import { flatMapDepth } from "../fp";
+import { flatMapDepth } from "./index";
 export = flatMapDepth;

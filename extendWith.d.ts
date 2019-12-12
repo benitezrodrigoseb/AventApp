@@ -1,2 +1,2 @@
-import { extendWith } from "../fp";
+import { extendWith } from "./index";
 export = extendWith;

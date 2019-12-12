@@ -1,2 +1,2 @@
-import { escapeRegExp } from "../fp";
+import { escapeRegExp } from "./index";
 export = escapeRegExp;

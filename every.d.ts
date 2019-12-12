@@ -1,2 +1,2 @@
-import { every } from "../fp";
+import { every } from "./index";
 export = every;

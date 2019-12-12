@@ -1,2 +1,2 @@
-import { flow } from "../fp";
+import { flow } from "./index";
 export = flow;

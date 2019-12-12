@@ -1,2 +1,2 @@
-import { flip } from "../fp";
+import { flip } from "./index";
 export = flip;

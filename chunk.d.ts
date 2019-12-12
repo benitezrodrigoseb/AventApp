@@ -1,2 +1,2 @@
-import { chunk } from "../fp";
+import { chunk } from "./index";
 export = chunk;

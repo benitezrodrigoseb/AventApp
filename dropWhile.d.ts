@@ -1,2 +1,2 @@
-import { dropWhile } from "../fp";
+import { dropWhile } from "./index";
 export = dropWhile;

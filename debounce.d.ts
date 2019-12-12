@@ -1,2 +1,2 @@
-import { debounce } from "../fp";
+import { debounce } from "./index";
 export = debounce;

@@ -1,2 +1,2 @@
-import { defaultsDeep } from "../fp";
+import { defaultsDeep } from "./index";
 export = defaultsDeep;

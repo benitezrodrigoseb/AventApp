@@ -1,2 +1,2 @@
-import { concat } from "../fp";
+import { concat } from "./index";
 export = concat;

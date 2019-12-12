@@ -1,2 +1,2 @@
-import { clamp } from "../fp";
+import { clamp } from "./index";
 export = clamp;

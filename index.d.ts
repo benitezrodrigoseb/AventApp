@@ -1,64 +1,47 @@
-/// <reference types="node" />
-import { ClientDuplexStream, ClientReadableStream, ClientUnaryCall, ClientWritableStream, ServiceError } from './call';
-import { CallCredentials } from './call-credentials';
-import { Deadline, StatusObject } from './call-stream';
-import { Channel, ConnectivityState, ChannelImplementation } from './channel';
-import { ChannelCredentials } from './channel-credentials';
-import { CallOptions, Client } from './client';
-import { LogVerbosity, Status } from './constants';
-import { Deserialize, loadPackageDefinition, makeClientConstructor, Serialize, ServiceDefinition } from './make-client';
-import { Metadata } from './metadata';
-import { Server, UntypedHandleCall, UntypedServiceImplementation } from './server';
-import { KeyCertPair, ServerCredentials } from './server-credentials';
-import { StatusBuilder } from './status-builder';
-import { handleBidiStreamingCall, handleServerStreamingCall, handleUnaryCall, ServerUnaryCall, ServerReadableStream, ServerWritableStream, ServerDuplexStream } from './server-call';
-export interface OAuth2Client {
-    getRequestMetadata: (url: string, callback: (err: Error | null, headers?: {
-        [index: string]: string;
-    }) => void) => void;
-    getRequestHeaders: (url?: string) => Promise<{
-        [index: string]: string;
-    }>;
+// Type definitions for Lo-Dash 4.14
+// Project: https://lodash.com
+// Definitions by: Brian Zengel <https://github.com/bczengel>,
+//                 Ilya Mochalov <https://github.com/chrootsu>,
+//                 Stepan Mikhaylyuk <https://github.com/stepancar>,
+//                 AJ Richardson <https://github.com/aj-r>,
+//                 e-cloud <https://github.com/e-cloud>,
+//                 Georgii Dolzhykov <https://github.com/thorn0>,
+//                 Jack Moore <https://github.com/jtmthf>,
+//                 Dominique Rau <https://github.com/DomiR>
+//                 William Chelman <https://github.com/WilliamChelman>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.8
+
+/// <reference path="./common/common.d.ts" />
+/// <reference path="./common/array.d.ts" />
+/// <reference path="./common/collection.d.ts" />
+/// <reference path="./common/date.d.ts" />
+/// <reference path="./common/function.d.ts" />
+/// <reference path="./common/lang.d.ts" />
+/// <reference path="./common/math.d.ts" />
+/// <reference path="./common/number.d.ts" />
+/// <reference path="./common/object.d.ts" />
+/// <reference path="./common/seq.d.ts" />
+/// <reference path="./common/string.d.ts" />
+/// <reference path="./common/util.d.ts" />
+
+export = _;
+export as namespace _;
+
+declare const _: _.LoDashStatic;
+declare namespace _ {
+    // tslint:disable-next-line no-empty-interface (This will be augmented)
+    interface LoDashStatic {}
 }
-/**** Client Credentials ****/
-export declare const credentials: {
-    [key: string]: Function;
-};
-/**** Metadata ****/
-export { Metadata };
-/**** Constants ****/
-export { LogVerbosity as logVerbosity, Status as status, ConnectivityState as connectivityState, };
-/**** Client ****/
-export { Client, loadPackageDefinition, makeClientConstructor, makeClientConstructor as makeGenericClientConstructor, ChannelImplementation as Channel, };
-/**
- * Close a Client object.
- * @param client The client to close.
- */
-export declare const closeClient: (client: Client) => void;
-export declare const waitForClientReady: (client: Client, deadline: number | Date, callback: (error?: Error | undefined) => void) => void;
-export { ChannelCredentials, CallCredentials, Deadline, Serialize as serialize, Deserialize as deserialize, ClientUnaryCall, ClientReadableStream, ClientWritableStream, ClientDuplexStream, CallOptions, StatusObject, ServiceError, ServerUnaryCall, ServerReadableStream, ServerWritableStream, ServerDuplexStream, ServiceDefinition, UntypedHandleCall, UntypedServiceImplementation, };
-/**** Server ****/
-export { handleBidiStreamingCall, handleServerStreamingCall, handleUnaryCall };
-export declare type Call = ClientUnaryCall | ClientReadableStream<any> | ClientWritableStream<any> | ClientDuplexStream<any, any>;
-export declare type MetadataListener = (metadata: Metadata, next: Function) => void;
-export declare type MessageListener = (message: any, next: Function) => void;
-export declare type StatusListener = (status: StatusObject, next: Function) => void;
-export interface Listener {
-    onReceiveMetadata?: MetadataListener;
-    onReceiveMessage?: MessageListener;
-    onReceiveStatus?: StatusListener;
+
+// Backward compatibility with --target es5
+declare global {
+    // tslint:disable-next-line:no-empty-interface
+    interface Set<T> { }
+    // tslint:disable-next-line:no-empty-interface
+    interface Map<K, V> { }
+    // tslint:disable-next-line:no-empty-interface
+    interface WeakSet<T> { }
+    // tslint:disable-next-line:no-empty-interface
+    interface WeakMap<K extends object, V> { }
 }
-/**** Unimplemented function stubs ****/
-export declare const loadObject: (value: any, options: any) => never;
-export declare const load: (filename: any, format: any, options: any) => never;
-export declare const setLogger: (logger: Partial<Console>) => void;
-export declare const setLogVerbosity: (verbosity: LogVerbosity) => void;
-export { Server };
-export { ServerCredentials };
-export { KeyCertPair };
-export declare const getClientChannel: (client: Client) => Channel;
-export { StatusBuilder };
-export declare const ListenerBuilder: () => never;
-export declare const InterceptorBuilder: () => never;
-export declare const InterceptingCall: () => never;
-export { GrpcObject } from './make-client';

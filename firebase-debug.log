@@ -1,0 +1,36 @@
+[debug] [2019-12-09T19:12:21.773Z] ----------------------------------------------------------------------
+[debug] [2019-12-09T19:12:21.775Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lauti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-12-09T19:12:21.775Z] CLI Version:   7.9.0
+[debug] [2019-12-09T19:12:21.775Z] Platform:      win32
+[debug] [2019-12-09T19:12:21.775Z] Node Version:  v13.3.0
+[debug] [2019-12-09T19:12:21.777Z] Time:          Mon Dec 09 2019 16:12:21 GMT-0300 (hora estándar de Argentina)
+[debug] [2019-12-09T19:12:21.777Z] ----------------------------------------------------------------------
+[debug] [2019-12-09T19:12:21.777Z] 
+[debug] [2019-12-09T19:12:21.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-09T19:12:21.787Z] > authorizing via signed-in user
+[debug] [2019-12-09T19:12:21.787Z] [iam] checking project aventapp-792f2 for permissions ["firebase.projects.get"]
+[debug] [2019-12-09T19:12:21.788Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/aventapp-792f2:testIamPermissions  
+
+[debug] [2019-12-09T19:12:23.075Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-09T19:12:23.080Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/aventapp-792f2  
+ 
+[debug] [2019-12-09T19:12:24.425Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\lauti\Desktop\Proyecto'...
+[info] 
+[debug] [2019-12-09T19:12:24.432Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/aventapp-792f2/webApps/-/config  
+ 
+[debug] [2019-12-09T19:12:24.920Z] <<< HTTP RESPONSE 200
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "13"
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\lauti\Desktop\Proyecto\functions" for Cloud Functions...
+[debug] [2019-12-09T19:12:30.776Z] [worker-~diagnostic~-f1473891-9ddc-4bd4-b3ef-1c27af381626]: Assigning socketPath: \\?\pipe\C:\Users\lauti\Desktop\Proyecto\functions\9068
+[debug] [2019-12-09T19:12:30.776Z] [worker-~diagnostic~-f1473891-9ddc-4bd4-b3ef-1c27af381626]: BUSY
+[debug] [2019-12-09T19:12:31.244Z] [runtime-status] [9068] Functions runtime initialized. {"cwd":"C:\\Users\\lauti\\Desktop\\Proyecto\\functions","node_version":"13.3.0"}
+[debug] [2019-12-09T19:12:31.244Z] [runtime-status] [9068] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-09T19:12:31.248Z] [runtime-status] [9068] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-12-09T19:12:31.250Z] [runtime-status] [9068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-09T19:12:31.251Z] [runtime-status] [9068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-09T19:12:31.333Z] [worker-~diagnostic~-f1473891-9ddc-4bd4-b3ef-1c27af381626]: exited
+[debug] [2019-12-09T19:12:31.334Z] [worker-~diagnostic~-f1473891-9ddc-4bd4-b3ef-1c27af381626]: FINISHED

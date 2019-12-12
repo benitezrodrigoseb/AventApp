@@ -1,2 +1,2 @@
-import { template } from "./index";
+import { template } from "../fp";
 export = template;

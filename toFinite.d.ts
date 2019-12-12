@@ -1,2 +1,2 @@
-import { toFinite } from "./index";
+import { toFinite } from "../fp";
 export = toFinite;

@@ -1,2 +1,2 @@
-import { ceil } from "./index";
+import { ceil } from "../fp";
 export = ceil;

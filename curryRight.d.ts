@@ -1,2 +1,2 @@
-import { curryRight } from "./index";
+import { curryRight } from "../fp";
 export = curryRight;

@@ -1,2 +1,2 @@
-import { defaultTo } from "./index";
+import { defaultTo } from "../fp";
 export = defaultTo;

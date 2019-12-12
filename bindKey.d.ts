@@ -1,2 +1,2 @@
-import { bindKey } from "./index";
+import { bindKey } from "../fp";
 export = bindKey;

@@ -1,2 +1,2 @@
-import { delay } from "./index";
+import { delay } from "../fp";
 export = delay;

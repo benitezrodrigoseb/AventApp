@@ -1,94 +1,92 @@
 {
-  "_from": "@grpc/grpc-js@^0.6.12",
-  "_id": "@grpc/grpc-js@0.6.13",
+  "_from": "@types/lodash@^4.14.104",
+  "_id": "@types/lodash@4.14.149",
   "_inBundle": false,
-  "_integrity": "sha512-fxkxS+sEtYdfR0ifqgCTqBe4jZ5PvlvgcaYpzwgMqz+b18uUdPmp5eRQN+qbbJg2ZMUcgItA8OWIvAobW3PDng==",
-  "_location": "/@grpc/grpc-js",
+  "_integrity": "sha512-ijGqzZt/b7BfzcK9vTrS6MFljQRPn5BFWOx8oE0GYxribu6uV+aA9zZuXI1zc/etK9E8nrgdoF2+LgUw7+9tJQ==",
+  "_location": "/@types/lodash",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "@grpc/grpc-js@^0.6.12",
-    "name": "@grpc/grpc-js",
-    "escapedName": "@grpc%2fgrpc-js",
-    "scope": "@grpc",
-    "rawSpec": "^0.6.12",
+    "raw": "@types/lodash@^4.14.104",
+    "name": "@types/lodash",
+    "escapedName": "@types%2flodash",
+    "scope": "@types",
+    "rawSpec": "^4.14.104",
     "saveSpec": null,
-    "fetchSpec": "^0.6.12"
+    "fetchSpec": "^4.14.104"
   },
   "_requiredBy": [
-    "/google-gax"
+    "/firebase-functions-test"
   ],
-  "_resolved": "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-0.6.13.tgz",
-  "_shasum": "960c37fffb006c683382de3fdf4d8ab837829afe",
-  "_spec": "@grpc/grpc-js@^0.6.12",
-  "_where": "C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\google-gax",
-  "author": {
-    "name": "Google Inc."
+  "_resolved": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.149.tgz",
+  "_shasum": "1342d63d948c6062838fbf961012f74d4e638440",
+  "_spec": "@types/lodash@^4.14.104",
+  "_where": "C:\\Users\\lauti\\Desktop\\Proyecto\\functions\\node_modules\\firebase-functions-test",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
   },
   "bundleDependencies": false,
   "contributors": [
     {
-      "name": "Google Inc."
+      "name": "Brian Zengel",
+      "url": "https://github.com/bczengel"
+    },
+    {
+      "name": "Ilya Mochalov",
+      "url": "https://github.com/chrootsu"
+    },
+    {
+      "name": "Stepan Mikhaylyuk",
+      "url": "https://github.com/stepancar"
+    },
+    {
+      "name": "AJ Richardson",
+      "url": "https://github.com/aj-r"
+    },
+    {
+      "name": "e-cloud",
+      "url": "https://github.com/e-cloud"
+    },
+    {
+      "name": "Georgii Dolzhykov",
+      "url": "https://github.com/thorn0"
+    },
+    {
+      "name": "Jack Moore",
+      "url": "https://github.com/jtmthf"
+    },
+    {
+      "name": "Dominique Rau",
+      "url": "https://github.com/DomiR"
+    },
+    {
+      "name": "William Chelman",
+      "url": "https://github.com/WilliamChelman"
     }
   ],
-  "dependencies": {
-    "semver": "^6.2.0"
-  },
+  "dependencies": {},
   "deprecated": false,
-  "description": "gRPC Library for Node - pure JS implementation",
-  "devDependencies": {
-    "@grpc/proto-loader": "^0.5.0",
-    "@types/gulp": "^4.0.6",
-    "@types/gulp-mocha": "0.0.32",
-    "@types/lodash": "^4.14.108",
-    "@types/mocha": "^5.2.6",
-    "@types/ncp": "^2.0.1",
-    "@types/node": "^12.7.5",
-    "@types/pify": "^3.0.2",
-    "@types/semver": "^6.0.1",
-    "clang-format": "^1.0.55",
-    "execa": "^2.0.3",
-    "gts": "^1.1.0",
-    "gulp": "^4.0.2",
-    "gulp-mocha": "^6.0.0",
-    "lodash": "^4.17.4",
-    "mocha-jenkins-reporter": "^0.4.1",
-    "ncp": "^2.0.0",
-    "pify": "^4.0.1",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
-  },
-  "engines": {
-    "node": "^8.13.0 || >=10.10.0"
-  },
-  "files": [
-    "src/*.ts",
-    "build/src/*.{js,d.ts,js.map}",
-    "LICENSE"
-  ],
-  "homepage": "https://grpc.io/",
-  "keywords": [],
-  "license": "Apache-2.0",
-  "main": "build/src/index.js",
-  "name": "@grpc/grpc-js",
+  "description": "TypeScript definitions for Lo-Dash",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/lodash",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grpc/grpc-node/tree/master/packages/grpc-js"
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory": "types/lodash"
   },
-  "scripts": {
-    "build": "npm run compile",
-    "check": "gts check",
-    "clean": "gts clean",
-    "compile": "tsc -p .",
-    "fix": "gts fix",
-    "format": "clang-format -i -style=\"{Language: JavaScript, BasedOnStyle: Google, ColumnLimit: 80}\" src/*.ts test/*.ts",
-    "lint": "tslint -c node_modules/google-ts-style/tslint.json -p . -t codeFrame --type-check",
-    "posttest": "npm run check",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "test": "gulp test"
+  "scripts": {},
+  "typeScriptVersion": "2.8",
+  "types": "index.d.ts",
+  "typesPublisherContentHash": "cf2d76aa6e460795bfbbd13377ea8f96ec6c6982d6bf45c1273aa0c47cb51975",
+  "typesVersions": {
+    ">=3.1.0-0": {
+      "*": [
+        "ts3.1/*"
+      ]
+    }
   },
-  "types": "build/src/index.d.ts",
-  "version": "0.6.13"
+  "version": "4.14.149"
 }
